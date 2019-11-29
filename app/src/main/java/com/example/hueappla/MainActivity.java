@@ -24,7 +24,47 @@ public class MainActivity extends AppCompatActivity implements HueLampApiListene
     }
 
     @Override
-    public void OnHueAdapterError() {
+    public void OnHueAdapterError(String error) {
         Log.i("Netwerk Error", "Adapter gaat niet goed");
+    }
+
+    @Override
+    public void OnHueLampSetOn(String error, HueLamp hueLamp) {
+
+    }
+
+    @Override
+    public void OnHueLampSetOnError(String error) {
+
+    }
+
+    @Override
+    public void OnHueLampSetBri(String error, HueLamp hueLamp) {
+
+    }
+
+    @Override
+    public void OnHueLampSetBriError(String error) {
+
+    }
+
+    @Override
+    public void OnHueLampSetSat(String error, HueLamp hueLamp) {
+
+    }
+
+    @Override
+    public void OnHueLampSetSatError(String error) {
+
+    }
+
+    @Override
+    public void OnHueLampSetHue(String error, HueLamp hueLamp) {
+
+    }
+
+    @Override
+    public void OnHueLampSetHueError(String error) {
+
     }
 }
